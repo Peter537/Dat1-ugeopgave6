@@ -1,4 +1,4 @@
-public class Person {
+public abstract class Person {
 
     private final String name;
 
@@ -10,7 +10,5 @@ public class Person {
         return name;
     }
 
-    public boolean addCourse(String course) {
-        return true;
-    }
+    public abstract boolean addCourse(String course);
 }
