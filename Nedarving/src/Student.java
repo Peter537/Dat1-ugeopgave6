@@ -19,5 +19,4 @@ public class Student extends Person {
         currentCourses.add(course);
         return true;
     }
-
 }
