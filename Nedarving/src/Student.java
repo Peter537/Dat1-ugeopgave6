@@ -5,9 +5,9 @@ public class Student extends Person {
     private final ArrayList<String> passedCourses;
     private final ArrayList<String> currentCourses;
 
-    public Student(String name) {
+    public Student(String name, ArrayList<String> passedCourses) {
         super(name);
-        this.passedCourses = new ArrayList<>();
+        this.passedCourses = passedCourses;
         this.currentCourses = new ArrayList<>();
     }
 
