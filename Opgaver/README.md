@@ -44,7 +44,31 @@ Du skal kigge i Property-klassens onLand()-metode for at finde der hvor spillere
 
 1.f Du kan nu kalde metoden fra Tax klassens calculateAssets() og lægge beløbet til din lokale variable assets fra 1.b. Til sidst skal du returnere assets. Metoden kan du bruge i Tax-klassens onReject() til at beregne hvor meget spilleren skal betale i skat. Implementer dette og test at det virker. 
 
-1.g Test i spillet at din kode virker ved at ændre resultvariablen i thowAndMove() i Game-klassen så du tvinger spilleren til at lande på Tax-feltet. 
+1.g Test i spillet at din kode virker ved at
+1. ændre result-variablen i thowAndMove() i Game-klassen så du tvinger spilleren til at lande på Tax-feltet. 
+2. sørge sørge for at Egon allerede har købt nogle felter og måske modtaget penge, før han lander på Tax-feltet.
+Det kan du gøre ved at indsætte følgende kodestump i toppen af Game klassens runGame() metode.
+
+<code>
+
+       
+//Test: Egon starter med at købe et par grunde til hhv. 2000 og 8000 kr, og modtager nogle penge
+//Nu kan det testes at der trækkes det rigtige i skat hvis han siger nej til at betale det faste beløb 
+
+        Field somePlot = board.getField(6);//et rederi
+        players.get(0).buy(somePlot.cost);
+        players.get(0).addDeed((Property)somePlot);
+
+        somePlot = board.getField(40);//rådhuspladsen
+        players.get(0).buy(somePlot.cost);
+        players.get(0).addDeed((Property)somePlot);
+        
+        players.get(0).recieve(20000);//med denne linje modtager Egon et beløb uden skøde
+
+</code>
+
+
+
 
 ## Task 2: Træk et chancekort
 Når en spiller lander på et "Chance"-felt skal der trækkes et chancekort. Du skal nu lave et antal chancekort og sørge for, at de kan blive trukket, når man lander på et Chance-felt.
