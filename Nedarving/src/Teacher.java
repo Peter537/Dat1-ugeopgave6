@@ -11,4 +11,13 @@ public class Teacher extends Person {
         this.currentCourses = new ArrayList<>();
     }
 
+    @Override
+    public boolean addCourse(String course) {
+        if (!canTeach.contains(course)) {
+            return false;
+        }
+        currentCourses.add(course);
+        return true;
+    }
+
 }
