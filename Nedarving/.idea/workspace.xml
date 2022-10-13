@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34250702-cc24-49d3-a0b6-02567faa18b7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/Nedarving/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nedarving/Main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nedarving/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nedarving/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Nedarving/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Nedarving/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
-    </list>
+    <list default="true" id="34250702-cc24-49d3-a0b6-02567faa18b7" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
